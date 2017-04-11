@@ -4,9 +4,10 @@ $.ajax({
     url: 'https://www.codeschool.com/users/3645491.json',
     dataType: 'jsonp',
     success: function(response) {
-    	console.log(response, 'response')
+    //	console.log(response, 'response')
     	addCourses(response.courses.completed)
-    	addBadges(response.badges)
+    // addCourses(response.badges)
+    //	addBadges(response.badges)
       // handle response
     }
   });
@@ -42,6 +43,7 @@ function addCourses(courses) {
 
 	}
 
+/*
 function addBadges(courses) {
 
 var $badges = $('#badges');
@@ -60,7 +62,7 @@ var $badges = $('#badges');
 
 	}
 
-
+*/
 
 });
 
